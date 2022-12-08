@@ -994,9 +994,11 @@ footer p a {
   }
   #contactpage form p label span input {
     width: 97%;
+    font-size: 16px;
   }
   #contactpage form p label span textarea {
     width: 97%;
+    font-size: 16px;
   }
   .contact-page-name {
     margin-top: 80px;
