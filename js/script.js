@@ -60,7 +60,7 @@ $(function () {
 /*挨拶文のセクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
 ScrollTrigger.create({
   trigger: "#greeting",
-  start: "top center",
+  start: "top 80%",
   toggleClass: "isView",
   // 一度クラスがついたら消えないようにする
   once: true,
@@ -68,7 +68,7 @@ ScrollTrigger.create({
 /*「SERVICE」セクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
 ScrollTrigger.create({
   trigger: "#service",
-  start: "top center",
+  start: "top 80%",
   toggleClass: "isView",
   // 一度クラスがついたら消えないようにする
   once: true,
@@ -76,15 +76,15 @@ ScrollTrigger.create({
 /*「WORKS」セクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
 ScrollTrigger.create({
   trigger: "#works",
-  start: "top center",
+  start: "top 80%",
   toggleClass: "isView",
   // 一度クラスがついたら消えないようにする
   once: true,
 });
-/*「BLOG」セクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
+/*「CUSTOMER REVIEWS」セクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
 ScrollTrigger.create({
   trigger: "#customer-reviews",
-  start: "top center",
+  start: "top 80%",
   toggleClass: "isView",
   // 一度クラスがついたら消えないようにする
   once: true,
@@ -92,7 +92,7 @@ ScrollTrigger.create({
 /*「CONTACT」セクションまでスクロールされた時に、「.isView」というクラスを付与する機能*/
 ScrollTrigger.create({
   trigger: "#contact",
-  start: "top center",
+  start: "top 80%",
   toggleClass: "isView",
   // 一度クラスがついたら消えないようにする
   once: true,
