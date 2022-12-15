@@ -45,10 +45,10 @@ $(function () {
   // 500pxスクロールしたらヘッダー表示
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
-      // 0.3秒でスライドイン
+      // 0.5秒でスライドイン
       headerArea.slideDown(500);
     } else {
-      // 0.3秒でスライドアウト
+      // 0.5秒でスライドアウト
       headerArea.slideUp(500);
     }
   });
