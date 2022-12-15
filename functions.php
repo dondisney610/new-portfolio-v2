@@ -19,3 +19,23 @@ register_nav_menus(
     'place_footer' => 'フッターメニュー',
   )
   );
+
+//カテゴリ名を取得する関数を登録
+add_action( 'rest_api_init', 'register_category_name' );
+
+function register_category_name() {
+//register_rest_field関数を用いget_category_name関数からカテゴリ名を取得し、追加する
+    register_rest_field( 'post',
+        'category_name',
+        array(
+            'get_callback'    => 'get_category_name'
+        )
+    );
+}
+
+//$objectは現在の投稿の詳細データが入る
+function get_category_name( $object ) {
+    $category = get_the_category($object[ 'id' ]);
+    $cat_name = $category[0]->cat_name;
+    return $cat_name;
+}
