@@ -17,31 +17,33 @@
         </div>
         <div class="introduction-main-right">
           <table>
-            <tr>
-              <th>名前：</th>
-              <td>大山口 吏紅　Oyamaguchi Riku</td>
-            </tr>
-            <tr>
-              <th>スキル：</th>
-              <td>
-                HTML, CSS, JavaScript, jQuery, React, Next.js, TypeScript, PHP,
-                Liquid
-              </td>
-            </tr>
-            <tr>
-              <th>事業内容：</th>
-              <td>
-				  コーディング, HPカスタマイズ, WordPressサイト構築, プラグイン導入サポート, ShopifyでのECサイト構築
-              </td>
-            </tr>
-            <tr>
-              <th>資格：</th>
-              <td>TOEICスコア 830</td>
-            </tr>
-            <tr>
-              <th>趣味：</th>
-              <td>ディズニー, ボクシング, ピアノ</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>名前：</th>
+                <td>大山口 吏紅　Oyamaguchi Riku</td>
+              </tr>
+              <tr>
+                <th>スキル：</th>
+                <td>
+                  HTML, CSS, JavaScript, jQuery, React, Next.js, TypeScript, PHP,
+                  Liquid
+                </td>
+              </tr>
+              <tr>
+                <th>事業内容：</th>
+                <td>
+            コーディング, HPカスタマイズ, WordPressサイト構築, プラグイン導入サポート, ShopifyでのECサイト構築
+                </td>
+              </tr>
+              <tr>
+                <th>資格：</th>
+                <td>TOEICスコア 830</td>
+              </tr>
+              <tr>
+                <th>趣味：</th>
+                <td>ディズニー, ボクシング, ピアノ</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
