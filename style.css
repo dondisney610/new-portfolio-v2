@@ -138,12 +138,61 @@ header .header-wrapper {
 header .header-wrapper .header-logo {
   margin: 0;
 }
-header .header-wrapper .header-logo a {
+header .header-wrapper .header-logo .header-logo-a a {
   color: black;
   text-decoration: none;
   font-size: 25px;
   font-family: "Snell Roundhand", sans-serif;
   display: inline-block;
+}
+header .header-wrapper .header-logo .nav-btn {
+  width: 52px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+  position: relative;
+  right: 30px;
+  display: none;
+  z-index: 10;
+}
+header .header-wrapper .header-logo .nav-btn.-active span {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+header .header-wrapper .header-logo .nav-btn.-active span:first-child {
+  transform: rotate(45deg);
+}
+header .header-wrapper .header-logo .nav-btn.-active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+header .header-wrapper .header-logo .nav-btn.-active span:last-child {
+  transform: rotate(-45deg);
+}
+header .header-wrapper .header-logo .nav-btn span {
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: transform 0.3s ease;
+}
+header .header-wrapper .header-logo .nav-btn span:first-child {
+  top: 0;
+}
+header .header-wrapper .header-logo .nav-btn span:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .header-wrapper .header-logo .nav-btn span:last-child {
+  bottom: 0;
 }
 header .header-wrapper .header-nav {
   margin: 0;
@@ -161,71 +210,19 @@ header .header-wrapper .header-nav ul li a {
 header .header-wrapper .header-twitter {
   cursor: pointer;
 }
-
-.nav-btn {
-  width: 52px;
-  height: 25px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: none;
-  font: inherit;
-  outline: none;
-  position: relative;
-  right: 30px;
-  display: none;
-  z-index: 10;
-}
-.nav-btn.-active span {
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transition: transform 0.3s ease;
-}
-.nav-btn.-active span:first-child {
-  transform: rotate(45deg);
-}
-.nav-btn.-active span:nth-child(2) {
-  transform: rotate(45deg);
-}
-.nav-btn.-active span:last-child {
-  transform: rotate(-45deg);
-}
-.nav-btn span {
-  position: absolute;
-  width: 60%;
-  height: 3px;
-  background-color: black;
-  display: block;
-  transition: transform 0.3s ease;
-}
-.nav-btn span:first-child {
-  top: 0;
-}
-.nav-btn span:nth-child(2) {
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.nav-btn span:last-child {
-  bottom: 0;
-}
-
-#page-top {
+header #page-top {
   position: fixed;
   bottom: 40px;
   right: 40px;
   z-index: 9;
 }
-#page-top i {
+header #page-top i {
   font-size: 25px;
 }
-#page-top i:hover {
+header #page-top i:hover {
   cursor: pointer;
 }
-
-.language-switcher {
+header .language-switcher {
   text-align: right;
   padding-right: 30px;
 }
@@ -244,6 +241,16 @@ header .header-wrapper .header-twitter {
   }
   header .header-wrapper .header-logo .header-logo-a {
     padding: 0;
+  }
+  header .header-wrapper .header-logo .nav-btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 11;
   }
   header .header-wrapper .header-nav {
     margin: 0 auto;
@@ -287,21 +294,11 @@ header .header-wrapper .header-twitter {
   header .header-wrapper .header-twitter {
     display: none;
   }
-  header .header-wrapper .nav-btn {
-    display: block;
-    margin-left: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 0px;
-    right: 20px;
-    z-index: 11;
-  }
-  .language-switcher {
+  header .language-switcher {
     padding-right: 15px;
     padding-top: 20px;
   }
-  .language-switcher a {
+  header .language-switcher a {
     font-size: 14px;
   }
 }
