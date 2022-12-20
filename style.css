@@ -306,7 +306,7 @@ header .language-switcher {
 #top {
   position: relative;
   height: 720px;
-  background-image: url(img/main-visual.jpg);
+  background-image: url(img/main-visual.webp);
   background-size: cover;
   background-position: center;
   text-align: center;
