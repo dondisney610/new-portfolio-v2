@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 
     <section class="section-contents" id="top">
-      <h1 data-splitting class="site-title headline--float headline--twirl">
-        Riku Oyamaguchi's Portforio
-      </h1>
       <h1>Riku Oyamaguchi's Portforio</h1>
     </section>
     <section id="greeting" class="top-section-container">
