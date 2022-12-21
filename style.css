@@ -577,7 +577,7 @@ header .language-switcher {
   padding: 100px 0px;
   text-align: center;
 }
-#customer-reviews .customer-reviews-boxes img {
+#customer-reviews .customer-reviews-boxes .customer-reviews-boxes-pc img {
   border: 1px black solid;
   margin-top: 30px;
   width: 70%;
@@ -585,7 +585,10 @@ header .language-switcher {
   opacity: 0;
   transition: transform 0.6s, opacity 0.6s;
 }
-#customer-reviews.isView img {
+#customer-reviews .customer-reviews-boxes .customer-reviews-boxes-sp {
+  display: none;
+}
+#customer-reviews.isView .customer-reviews-boxes-pc img {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -594,8 +597,22 @@ header .language-switcher {
   #customer-reviews {
     padding: 100px 0px;
   }
-  #customer-reviews .customer-reviews-boxes img {
+  #customer-reviews .customer-reviews-boxes .customer-reviews-boxes-pc {
+    display: none;
+  }
+  #customer-reviews .customer-reviews-boxes .customer-reviews-boxes-sp {
+    display: block;
+  }
+  #customer-reviews .customer-reviews-boxes .customer-reviews-boxes-sp img {
     width: 100%;
+    border: 1px black solid;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.6s, opacity 0.6s;
+  }
+  #customer-reviews.isView .customer-reviews-boxes-sp img {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 /**********TopPageのContactセクションのスタイル***************/

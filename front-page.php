@@ -116,10 +116,18 @@ wp_reset_query();
         <div class="under-bar"></div>
       </div>
       <div class="customer-reviews-boxes">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/ROBINsan-review.png" alt="" />
-        <img src="<?php echo get_template_directory_uri(); ?>/img/yukisan-review.png" alt="" />
-        <img src="<?php echo get_template_directory_uri(); ?>/img/shopify-review.png" alt="" />
-        <img src="<?php echo get_template_directory_uri(); ?>/img/siraisan-review.png" alt="" />
+        <div class="customer-reviews-boxes-pc">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/robin-pc.png" alt="レビュー1" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/hayate-pc.png" alt="レビュー2" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/pokipoki-pc.png" alt="レビュー3" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/hisayama-pc.png" alt="レビュー4" />
+        </div>
+        <div class="customer-reviews-boxes-sp">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/robin-sp.png" alt="レビュー1" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/hayate-sp.png" alt="レビュー2" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/pokipoki-sp.png" alt="レビュー3" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/hisayama-sp.png" alt="レビュー4" />
+        </div>
       </div>
       <div class="button">
         <a
